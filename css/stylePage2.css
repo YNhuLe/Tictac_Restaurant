@@ -1,0 +1,248 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@300&family=Vesper+Libre&display=swap");
+* {
+  box-sizing: border-box;
+  /* padding-left: 5px; */
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  /* background-color: rgb(248, 233, 216); */
+  font-family: "Source Serif Pro", serif;
+  font-family: "Vesper Libre", serif;
+}
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 100px;
+  background-color: rgb(248, 245, 245);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sidebar a.active {
+  background-color: rgb(72, 73, 72);
+  color: white;
+}
+.sidebar a:hover:not(.active) {
+  background-color: rgb(171, 171, 173);
+  color: rgb(248, 244, 244);
+}
+
+@media screen and (max-width: 700px) {
+  /* * {
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    justify-items: center;
+    justify-content: center;
+  } */
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* style for the menu items */
+@import url("https://fonts.googleapis.com/css2?family=Vesper+Libre&display=swap");
+.type {
+  text-align: center;
+  color: rgb(53, 52, 52);
+  font-size: 30px;
+  font-weight: bolder;
+  font-family: "Vesper Libre", serif;
+}
+
+.menu img {
+  object-fit: cover;
+  width: 1200px;
+  height: 300px;
+}
+/* style for the footer section */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Display:wght@300&family=Rubik:wght@400;500;700&display=swap");
+:root {
+  --light: #ffffff;
+  --dark: #000;
+}
+
+.container {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h3 {
+  font-family: "Noto Serif Display", serif;
+  font-size: 1.5vw;
+  font-weight: 300;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+  font-weight: 500;
+  transition: 0.3s ease-in;
+  border-bottom: 1px solid transparent;
+  margin-bottom: none;
+  display: inline-flex;
+}
+
+a:hover {
+  border-bottom: 1px solid var(--dark);
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+button {
+  appearance: none;
+  border: 0;
+  background: transparent;
+}
+
+.flex {
+  display: inline-flex;
+}
+
+.footer_video {
+  position: relative;
+  top: 0;
+  left: 0;
+
+  /* object-fit: cover; */
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* overflow: hidden; */
+  border: none;
+}
+
+.footer_inner {
+  background: var(--light);
+  backdrop-filter: blur(50px);
+  border: 0.1px solid green;
+  border-radius: 5px;
+  /* padding: 1px; */
+  /* margin: 1px 0; */
+  width: 900px;
+  height: 350px;
+}
+.footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 100vh;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: min(100%, 400px);
+  border-bottom: 1px solid var(--dark);
+}
+
+input {
+  padding: 0.5rem 0;
+  border: none;
+  background: none;
+  font-weight: 500;
+  transition: border 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+  border-radius: 0;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: bolder;
+}
+
+input:focus {
+  outline: none;
+}
+
+input::placeholder {
+  color: var(--dark);
+  text-align: left;
+}
+div img {
+  height: 100px;
+  width: 100px;
+  position: static;
+  /* margin-left: -400px; */
+}
+
+@media (max-width: 400px) {
+  .layout {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 0.5rem;
+  }
+  .w-50 {
+    width: 50%;
+  }
+  .w-25 {
+    width: 25%;
+  }
+}
+
+form {
+  position: relative;
+}
+svg {
+  margin: 0rem;
+  padding: 5px;
+}
+
+.c-2 {
+  padding: -300px;
+  margin-left: 35.5rem;
+}
+:where(ul.flex) li:hover {
+  filter: drop-shadow(8px 8px 10px grey);
+}
+
+.footer_copyright {
+  color: var(--light);
+}
+.newsletter {
+  padding: 20px;
+}
+
+/* .layout_item{
+    margin-bottom:-5px;
+    padding-bottom: 10px 0px 0px 10px;
+    color: red;
+} */
+
+div.layout_item.w-25 {
+  padding: 50px;
+}
+
+.layout.c-2 {
+  margin-bottom: 50px;
+}
+c-footer {
+  height: 100px;
+}
